@@ -1,0 +1,14 @@
+﻿<Window x:Class="DispatcherSafeObservableCollectionExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DispatcherSafeObservableCollectionExample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Orientation="Vertical" VerticalAlignment="Top">
+        <Button Content="Start" Click="Button_Click" />
+        <ListView Name="list" ItemsSource="{Binding}"
+                  DisplayMemberPath="Text" />
+    </StackPanel>
+</Window>
